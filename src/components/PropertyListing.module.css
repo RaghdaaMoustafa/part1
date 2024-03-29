@@ -1,0 +1,66 @@
+/* Base styles for the property component */
+.propertyListing {
+  display: flex; /* Arrange elements side-by-side */
+  margin-bottom: 20px; /* Add spacing between listings */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 4px; /* Rounded corners for a softer look */
+  background-color: #f5f5f5; /* Light gray background */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 15px; /* Adjust padding as needed */
+  flex-wrap: wrap; /* Allow content to wrap onto multiple lines */
+  width: calc(100% - 30px); /* Adjust width as needed (30px for margin) */
+  transition: all 0.2s ease-in-out; /* Smooth transition on hover */
+}
+
+.propertyListing:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Styles for the property image */
+.propertyImage {
+  width: 200px; /* Set a fixed width for all images */
+  height: 200px; /* Set a fixed height for all images */
+  margin-right: 15px; /* Adjust margin as needed */
+  object-fit: cover; /* Ensure image covers container while maintaining aspect ratio */
+  object-position: center; /* Center the image within the container */
+  border-radius: 4px; /* Rounded corners for images */
+}
+
+/* Styles for the property information section */
+.propertyInfo {
+  flex: 1; /* Allow info section to fill remaining space */
+  padding: 10px; /* Add padding for content within info section */
+}
+
+/* Styles for property details (shown conditionally) */
+.details {
+  margin-top: 15px; /* Add spacing above details */
+  border-top: 1px solid #ddd; /* Light gray border to separate details */
+  padding-top: 10px; /* Add padding above details content */
+}
+
+/* Styles for headings and text within the property info */
+h2 {
+  margin-bottom: 5px; /* Add spacing below heading */
+  color: #333; /* Darker text for headings */
+}
+
+p {
+  margin-bottom: 5px; /* Add spacing below paragraphs */
+  color: #666; /* Lighter text for content */
+}
+
+/* Style for the "Details" button */
+button {
+  background-color: #38b000; /* Green button color */
+  color: #fff; /* White text color */
+  border: none; /* Remove border for a cleaner look */
+  padding: 5px 10px; /* Add padding for button content */
+  border-radius: 4px; /* Rounded corners for button */
+  cursor: pointer; /* Indicate clickable behavior */
+  transition: all 0.2s ease-in-out; /* Smooth transition on hover */
+}
+
+button:hover {
+  background-color: #2e8b00; /* Darken button color on hover */
+}

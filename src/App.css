@@ -1,0 +1,9 @@
+.app {
+  text-align: center; /* Center content horizontally */
+  padding: 20px; /* Add padding for main content area */
+}
+
+h1 {
+  margin-bottom: 20px; /* Add spacing below heading */
+  color: #333; /* Darker text for main heading */
+}
