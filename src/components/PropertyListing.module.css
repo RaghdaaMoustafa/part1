@@ -16,6 +16,9 @@
   height: 300px;
   border-radius: 30px;
 }
+.imgHolder img:hover {
+  transform: scale(1.1);
+}
 .placeDetails {
   width: 500px;
   padding: 0px 40px;
