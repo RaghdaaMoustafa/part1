@@ -1,8 +1,9 @@
-import PropertyListing from './components/PropertyListing' 
-import './App.css' 
+import PropertyListing from './components/PropertyListing'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import './index.css'
 
 const App = () => {
-
   const property = {
     address: '123 Main St',
     bedrooms: 3,
@@ -19,8 +20,10 @@ const App = () => {
 
   return (
     <div className="app">
+      <Navbar />
       <h1>Property Listing</h1>
       <PropertyListing property={property} />
+      <Footer />
     </div>
   )
 }

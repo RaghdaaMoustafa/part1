@@ -1,66 +1,127 @@
-/* Base styles for the property component */
-.propertyListing {
-  display: flex; /* Arrange elements side-by-side */
-  margin-bottom: 20px; /* Add spacing between listings */
-  border: 1px solid #ddd; /* Light gray border */
-  border-radius: 4px; /* Rounded corners for a softer look */
-  background-color: #f5f5f5; /* Light gray background */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  padding: 15px; /* Adjust padding as needed */
-  flex-wrap: wrap; /* Allow content to wrap onto multiple lines */
-  width: calc(100% - 30px); /* Adjust width as needed (30px for margin) */
-  transition: all 0.2s ease-in-out; /* Smooth transition on hover */
+.card {
+  width: 100%;
+  padding: 50px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.imgHolder {
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  border: solid 3px #0b2f47;
+}
+.imgHolder img {
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+}
+.placeDetails {
+  width: 500px;
+  padding: 0px 40px;
+}
+.placeDetails h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.placeDetails p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #94a9b7;
+  margin-bottom: 15px;
+}
+.btnDetails {
+  width: 150px;
+  height: 45px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #33cccc;
+  color: #000000;
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin-top: 15px;
 }
 
-.propertyListing:hover {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+.btnDetails:hover {
+  box-shadow: 0px 0px 32px 0px rgba(51, 204, 204, 0.32),
+    0px 1px 2px 0px rgba(12, 44, 65, 0.08), 0px 0px 0px 1px #1aadad inset;
+}
+.moreDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 80px;
+  width: 100%;
+}
+.d-more p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #94a9b7;
+}
+.d-more {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.gallery {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery img {
+  width: 395px;
+  height: 250px;
+  border-radius: 30px;
 }
 
-/* Styles for the property image */
-.propertyImage {
-  width: 200px; /* Set a fixed width for all images */
-  height: 200px; /* Set a fixed height for all images */
-  margin-right: 15px; /* Adjust margin as needed */
-  object-fit: cover; /* Ensure image covers container while maintaining aspect ratio */
-  object-position: center; /* Center the image within the container */
-  border-radius: 4px; /* Rounded corners for images */
+.gallery img:hover {
+  transform: scale(1.1);
 }
-
-/* Styles for the property information section */
-.propertyInfo {
-  flex: 1; /* Allow info section to fill remaining space */
-  padding: 10px; /* Add padding for content within info section */
+.nav-bar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
-
-/* Styles for property details (shown conditionally) */
-.details {
-  margin-top: 15px; /* Add spacing above details */
-  border-top: 1px solid #ddd; /* Light gray border to separate details */
-  padding-top: 10px; /* Add padding above details content */
+.nav-bar a {
+  color: #94a9b7;
 }
-
-/* Styles for headings and text within the property info */
-h2 {
-  margin-bottom: 5px; /* Add spacing below heading */
-  color: #333; /* Darker text for headings */
+.nav-bar-holder {
+  display: flex;
+  width: 900px;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 20px 112px;
+  background-color: transparent;
+  font-size: 1.5rem;
+  border-bottom: #94a9b7;
 }
-
-p {
-  margin-bottom: 5px; /* Add spacing below paragraphs */
-  color: #666; /* Lighter text for content */
+.footer-bar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-top: #94a9b7;
 }
-
-/* Style for the "Details" button */
-button {
-  background-color: #38b000; /* Green button color */
-  color: #fff; /* White text color */
-  border: none; /* Remove border for a cleaner look */
-  padding: 5px 10px; /* Add padding for button content */
-  border-radius: 4px; /* Rounded corners for button */
-  cursor: pointer; /* Indicate clickable behavior */
-  transition: all 0.2s ease-in-out; /* Smooth transition on hover */
+.footer-bar a {
+  color: #53626c;
 }
-
-button:hover {
-  background-color: #2e8b00; /* Darken button color on hover */
+.footer-bar-holder {
+  display: flex;
+  width: 900px;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 20px 112px;
+  background-color: transparent;
+  font-size: 1.5rem;
+  border-top: #94a9b7;
 }
